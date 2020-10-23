@@ -1,0 +1,17 @@
+{
+  "name": "jsproxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy": "^1.18.0",
+    "ip": "^1.1.5",
+    "node-ssh-forward": "^0.7.2",
+    "node-tcp-proxy": "0.0.15"
+  }
+}

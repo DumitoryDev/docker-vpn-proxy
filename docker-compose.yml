@@ -1,0 +1,18 @@
+version: "3"
+
+services: 
+    docker-vpn-proxy:
+        build: 
+            context: .
+            args:
+                room_id: #zerotier room id
+                listenport: #listen port
+                forwardport: #forward port
+                forwardip: #forward ip
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        devices:
+            - "/dev/net/tun"
+       
+ 
